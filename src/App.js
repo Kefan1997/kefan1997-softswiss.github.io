@@ -1,5 +1,6 @@
 import logoIcon from './images/logo.svg';
 import heroPlanet from './images/earth.png';
+import { ReactComponent as CartIcon } from './images/cart.svg';
 import React, { useState } from 'react';
 import './App.scss';
 
@@ -30,8 +31,8 @@ function App() {
             <a href="#offers" className="header__nav-link" onClick={closeMenu}>
               Products
             </a>
-            <a href="#journey" className="header__nav-link" onClick={closeMenu}>
-              About
+            <a href="#cart" className="header__nav-link header__nav-link--icon" onClick={closeMenu}>
+              <CartIcon className="header__nav-icon" />
             </a>
           </nav>
 

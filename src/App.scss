@@ -120,6 +120,34 @@ $bp-desktop: 1248px;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
+    &--icon {
+      display: inline-flex;
+      align-items: center;
+      padding-bottom: 0;
+
+      &:hover {
+        background: none;
+        -webkit-background-clip: initial;
+        -webkit-text-fill-color: initial;
+      }
+
+      .header__nav-icon {
+        width: 24px;
+        height: 20px;
+        display: block;
+
+        path {
+          fill: #ffffff;
+          transition: fill 0.2s ease;
+        }
+      }
+
+
+      &:hover .header__nav-icon path {
+        fill: url(#navIconGradient);
+      }
+    }
   }
 }
 
