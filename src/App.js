@@ -1,10 +1,11 @@
+import React, { useState } from 'react';
+import { ReactComponent as CartIcon } from './images/cart.svg';
 import logoIcon from './images/logo.svg';
 import heroPlanet from './images/earth.png';
-import { ReactComponent as CartIcon } from './images/cart.svg';
-import React, { useState } from 'react';
+
 import './App.scss';
 
-function App() {
+const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleToggleMenu = () => {
@@ -15,7 +16,7 @@ function App() {
     setIsMenuOpen(false);
   };
 
-  const handleNavLinkClick = (event, targetId) => {
+  const handleNavLinkClick = (targetId) => (event) => {
     event.preventDefault();
 
     const target = document.getElementById(targetId);
@@ -36,18 +37,10 @@ function App() {
           </div>
 
           <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}>
-            <a
-              href="#hero"
-              className="header__nav-link"
-              onClick={(e) => handleNavLinkClick(e, 'hero')}
-            >
+            <a href="#hero" className="header__nav-link" onClick={handleNavLinkClick('hero')}>
               Home
             </a>
-            <a
-              href="#offers"
-              className="header__nav-link"
-              onClick={(e) => handleNavLinkClick(e, 'offers')}
-            >
+            <a href="#offers" className="header__nav-link" onClick={handleNavLinkClick('offers')}>
               Products
             </a>
             <a href="#cart" className="header__nav-link header__nav-link--icon" onClick={closeMenu}>
@@ -201,6 +194,6 @@ function App() {
       </footer>
     </div>
   );
-}
+};
 
 export default App;
