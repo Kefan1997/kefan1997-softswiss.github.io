@@ -6,6 +6,7 @@ $color-pink: #ff70d9;
 $color-yellow: #ebff00;
 $color-yellow-hover: rgba(235, 255, 0, 0.6);
 $color-article-text: #d0d4f0;
+$color-mobile-menu-bg: #050826;
 
 $radius-lg: 24px;
 $radius-md: 18px;
@@ -190,10 +191,12 @@ $bp-desktop: 1248px;
 .header__nav--open {
   position: fixed;
   inset: 56px 0 auto 0;
-  background-color: #050826; // need to chage it
+  background-color: $color-mobile-menu-bg;
   display: flex;
   flex-direction: column;
   padding: 1rem 1.25rem 1.5rem;
+
+  z-index: 60;
 
   .header__nav-link {
     margin: 0.35rem 0;
@@ -229,8 +232,8 @@ $bp-desktop: 1248px;
 
 // ====== HERO SECTION ======
 .hero {
-  background-color: $color-section;
-  background-image: url('./images/header.png');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 79%),
+    url('./images/header.png');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -381,7 +384,15 @@ $bp-desktop: 1248px;
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 
   &__content {
-    max-width: 420px;
+    max-width: 260px;
+
+    @media (min-width: $bp-tablet) {
+      max-width: 280px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      max-width: 630px;
+    }
   }
 
   &__title {
@@ -424,23 +435,35 @@ $bp-desktop: 1248px;
   min-height: 230px;
 }
 
+.offer-card--image1,
+.offer-card--image2,
+.offer-card--image3,
+.offer-card--image4 {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 90%),
+    url('./images/image1.png');
+}
+
 .offer-card--image1 {
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.05)),
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 90%),
     url('./images/image1.png');
 }
 
 .offer-card--image2 {
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.05)),
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 90%),
     url('./images/image2.png');
 }
 
 .offer-card--image3 {
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.05)),
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 90%),
     url('./images/image3.png');
 }
 
 .offer-card--image4 {
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.05)),
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 90%),
     url('./images/image4.png');
 }
 

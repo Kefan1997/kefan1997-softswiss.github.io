@@ -15,6 +15,17 @@ function App() {
     setIsMenuOpen(false);
   };
 
+  const handleNavLinkClick = (event, targetId) => {
+    event.preventDefault();
+
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    closeMenu();
+  };
+
   return (
     <div className="page">
       <header className="header">
@@ -25,10 +36,18 @@ function App() {
           </div>
 
           <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}>
-            <a href="#hero" className="header__nav-link" onClick={closeMenu}>
+            <a
+              href="#hero"
+              className="header__nav-link"
+              onClick={(e) => handleNavLinkClick(e, 'hero')}
+            >
               Home
             </a>
-            <a href="#offers" className="header__nav-link" onClick={closeMenu}>
+            <a
+              href="#offers"
+              className="header__nav-link"
+              onClick={(e) => handleNavLinkClick(e, 'offers')}
+            >
               Products
             </a>
             <a href="#cart" className="header__nav-link header__nav-link--icon" onClick={closeMenu}>
