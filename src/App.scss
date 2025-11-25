@@ -435,6 +435,27 @@ $bp-desktop: 1248px;
   min-height: 230px;
 }
 
+@media (min-width: $bp-tablet) and (max-width: ($bp-desktop - 1)) {
+  .offer-card {
+    min-height: 230px;
+  }
+
+  .offer-card--wide {
+    grid-column: auto;
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .offer-card--wide {
+    min-height: 300px;
+    grid-column: 1 / -1;
+  }
+
+  .offer-card--medium {
+    min-height: 230px;
+  }
+}
+
 .offer-card--image1,
 .offer-card--image2,
 .offer-card--image3,

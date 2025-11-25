@@ -100,19 +100,19 @@ function App() {
           <div className="offers__inner">
             <h2 className="offers__title">Offers</h2>
 
-            <article className="offer-card offer-card--wide offer-card--image1">
-              <div className="offer-card__content">
-                <h3 className="offer-card__title">Move the borders of reality!</h3>
-                <p className="offer-card__text">
-                  Go on a space adventure – it&apos;s possible with us!
-                </p>
-                <button type="button" className="button button--secondary offer-card__button">
-                  Learn more
-                </button>
-              </div>
-            </article>
-
             <div className="offers__grid">
+              <article className="offer-card offer-card--wide offer-card--image1">
+                <div className="offer-card__content">
+                  <h3 className="offer-card__title">Move the borders of reality!</h3>
+                  <p className="offer-card__text">
+                    Go on a space adventure – it&apos;s possible with us!
+                  </p>
+                  <button type="button" className="button button--secondary offer-card__button">
+                    Learn more
+                  </button>
+                </div>
+              </article>
+
               <article className="offer-card offer-card--medium offer-card--image2">
                 <div className="offer-card__content">
                   <h3 className="offer-card__title">Space is not just stars and planets</h3>
@@ -132,18 +132,17 @@ function App() {
                   </button>
                 </div>
               </article>
-            </div>
 
-            {/* 4-я (большая снизу) */}
-            <article className="offer-card offer-card--wide offer-card--bottom offer-card--image4">
-              <div className="offer-card__content">
-                <h3 className="offer-card__title">Fulfill your fantastic dreams</h3>
-                <p className="offer-card__text">Space has never been so close.</p>
-                <button type="button" className="button button--secondary offer-card__button">
-                  Learn more
-                </button>
-              </div>
-            </article>
+              <article className="offer-card offer-card--wide offer-card--bottom offer-card--image4">
+                <div className="offer-card__content">
+                  <h3 className="offer-card__title">Fulfill your fantastic dreams</h3>
+                  <p className="offer-card__text">Space has never been so close.</p>
+                  <button type="button" className="button button--secondary offer-card__button">
+                    Learn more
+                  </button>
+                </div>
+              </article>
+            </div>
           </div>
         </section>
 
