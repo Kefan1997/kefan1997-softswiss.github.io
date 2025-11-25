@@ -1,12 +1,12 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## I spent 6 hours completing the task.
 
 ## Version of node
+
 22.21.1
 
 ## Version of npm
-10.9.4 
+
+10.9.4
 
 ## Available Scripts
 
