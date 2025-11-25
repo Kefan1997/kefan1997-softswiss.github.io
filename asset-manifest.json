@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/kefan1997-softswiss.github.io/static/css/main.51542b47.css",
+    "main.js": "/kefan1997-softswiss.github.io/static/js/main.0106a01b.js",
+    "static/js/453.eb768185.chunk.js": "/kefan1997-softswiss.github.io/static/js/453.eb768185.chunk.js",
+    "static/media/header.png": "/kefan1997-softswiss.github.io/static/media/header.4aab6891aa0154909619.png",
+    "static/media/image4.png": "/kefan1997-softswiss.github.io/static/media/image4.465b897154e9993b945a.png",
+    "static/media/image3.png": "/kefan1997-softswiss.github.io/static/media/image3.69c8007cfc68cbbb8978.png",
+    "static/media/image1.png": "/kefan1997-softswiss.github.io/static/media/image1.9bb9cfbb562273ec5b4a.png",
+    "static/media/image2.png": "/kefan1997-softswiss.github.io/static/media/image2.aec212856bcda7f099ea.png",
+    "static/media/earth.png": "/kefan1997-softswiss.github.io/static/media/earth.647c22591b306902cd9a.png",
+    "static/media/logo.svg": "/kefan1997-softswiss.github.io/static/media/logo.d1a8afbfaae16a8b5be8f88b6d93d223.svg",
+    "static/media/cart.svg": "/kefan1997-softswiss.github.io/static/media/cart.2d6f343d19b84d3836df575ea54b9e86.svg",
+    "index.html": "/kefan1997-softswiss.github.io/index.html",
+    "main.51542b47.css.map": "/kefan1997-softswiss.github.io/static/css/main.51542b47.css.map",
+    "main.0106a01b.js.map": "/kefan1997-softswiss.github.io/static/js/main.0106a01b.js.map",
+    "453.eb768185.chunk.js.map": "/kefan1997-softswiss.github.io/static/js/453.eb768185.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51542b47.css",
+    "static/js/main.0106a01b.js"
+  ]
+}
