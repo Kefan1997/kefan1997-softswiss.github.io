@@ -341,7 +341,12 @@ $bp-desktop: 1248px;
 
 // ====== OFFERS ======
 .offers {
-  background-color: $color-section;
+   background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(48, 69, 113, 1) 100%
+    ),
+    $color-section;
 }
 
 .offers__inner {
